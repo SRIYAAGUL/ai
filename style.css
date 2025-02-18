@@ -1,0 +1,148 @@
+
+ @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+ body{
+    background-color: black;
+ }
+.image-generator {
+height: 40vh;
+background:url("pex.webp");
+background-size:cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.image-generator .content{
+    color: white;
+    padding: 15px;
+    text-align: center;
+    max-width: 760px;
+}
+
+.image-generator h1{
+
+    font: size 2.5em;
+}
+
+.image-generator .generate-form{
+    height: 50px;
+    width: 560px;
+    display: flex;
+    padding: 6px;
+    margin: 45px 0 15px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+
+.generate-form .prompt-input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+}
+.generate-form .controls{
+display: flex;
+gap: 5px;
+height: 100%;
+}
+.generate-form .img-quantity{
+    border-radius: 20px;
+    width: 100px;
+    border: none;
+    
+}
+.generate-form .generate-btn{
+    border-radius: 20px;
+    background-color: blue;
+    color: aqua;
+    width: 100px;
+}
+
+.image-gallery {
+    display:flex;
+    gap: 15px;
+    padding: 20px;
+    margin: 50px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-gallery .img-card{
+    width: 285px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(40, 37, 37);
+    }
+    
+    .image-gallery .img-card img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    
+        .image-gallery .img-card .loading img{
+            width:80px;
+            height: 80px;
+            }
+
+        .image-gallery .img-card .download-btn img {
+            
+            width:20px;
+            height: 20px;
+        }
+        
+        .image-gallery .img-card .download-btn img {      
+            position: absolute;
+            bottom:15px;
+            right:14px;
+            border-radius: 20px;
+            display: none;
+        }
+        .image-gallery .img-card:not(.loading):hover .download-btn img{
+          display: flex;
+        }
+
+@media screen and (max-width:760px){
+
+    .image-generator h1{
+
+        font: size 1.5em;
+    }
+
+     .image-generator .generate-form{
+       height: 52px;
+       margin-top: 30px;
+       width: 300px;
+       display: block;
+     
+     }
+     
+     .generate-form .controls{
+        height: 40px;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: end;
+     }
+     
+     .generate-form .generate-btn{
+        height: 100%;
+     }
+
+     .image-gallery{
+        margin-top: 20px;
+     }
+}
+@media screen and (max-width:550px){
+
+    .image-gallery .img-card{
+        width: 100%;
+    }
+}
